@@ -4,8 +4,7 @@ it('Teste externo...', () =>{
 
 })
 
-describe('Grupo de teste...', ( ) =>{
-
+describe.skip('Grupo de teste...', ( ) =>{
     describe('subgrupo de testes específicos...', () => {
 
         it('Teste específico do subgrupo...', () =>{
