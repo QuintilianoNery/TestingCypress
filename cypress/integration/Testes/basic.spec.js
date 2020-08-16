@@ -17,6 +17,22 @@ describe('Cypress basico', () =>{
             //TODO escrever o log no console
             //TODO escrever o log em um campo de texto
     })
+
+    //.only executa apenas este teste
+    it.only('interagindo com um elemento', ( ) => {
+       cy.visit('https://wcaquino.me/cypress/componentes.html') 
+       //neste não vai executar nada pois não existe nenhum objeto com este nome.
+       //cy.get('#teste')
+
+       //Ação utilizando cy.get('#')
+       ///.click() executa a ação de clicar.
+       cy.get('#buttonSimple')
+            .click()
+            .should('have.value', 'Obrigado!')
+
+
+    })
+
 }) 
 
 
