@@ -11,11 +11,10 @@ const getSomethig = ()=> {
     })
 }
 
-    const system = () => {
-    console.log('init');
-    getSomethig().then(some =>{
+    const system = async() => {
+        console.log('init');
+        const some = await getSomethig()
         console.log (`Something is ${some}`)
-    })
     
     console.log('end')
 } 
