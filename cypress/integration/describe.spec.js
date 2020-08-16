@@ -1,10 +1,10 @@
 /// <reference types="cypress"/>
 
-it('Teste externo...', () =>{
+it.only('Teste externo...', () =>{
 
 })
 
-describe.skip('Grupo de teste...', ( ) =>{
+describe('Grupo de teste...', ( ) =>{
     describe('subgrupo de testes específicos...', () => {
 
         it('Teste específico do subgrupo...', () =>{
