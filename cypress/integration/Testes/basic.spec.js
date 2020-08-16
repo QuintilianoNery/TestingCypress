@@ -1,13 +1,22 @@
 /// <reference types="cypress"/>
 
-
 describe('Cypress basico', () =>{
-    it ('Visitar o site e verificar o título', () => {
+    it.only('Visitar o site e verificar o título', () => {
        cy.visit('https://wcaquino.me/cypress/componentes.html') 
+
+
+       //Pausa a execução até mandar parar cy.pause()
+        cy.pause()
+
+
+
+
 
        //Fiz duas vezes
         cy.title().should('be.equal', 'Campo de Treinamento')
-        cy.title().should('contain', 'Campo')
+        cy.title().debug().should('contain', 'Campo')
+
+        //##Comando debug é utilizado para pegar mais detalhes sobre um ponto
         
         //Fiz uma vez apenas
         cy.title()
@@ -19,7 +28,7 @@ describe('Cypress basico', () =>{
     })
 
     //.only executa apenas este teste
-    it.only('interagindo com um elemento', ( ) => {
+    it('interagindo com um elemento', ( ) => {
        cy.visit('https://wcaquino.me/cypress/componentes.html') 
        //neste não vai executar nada pois não existe nenhum objeto com este nome.
        //cy.get('#teste')
