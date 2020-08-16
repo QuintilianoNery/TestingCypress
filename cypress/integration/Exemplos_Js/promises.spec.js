@@ -15,7 +15,6 @@ const getSomethig = ()=> {
         console.log('init');
         const some = await getSomethig()
         console.log (`Something is ${some}`)
-    
     console.log('end')
 } 
 
