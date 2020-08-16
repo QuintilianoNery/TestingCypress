@@ -29,5 +29,14 @@ it ('nada agora', function( ) { })
 
 const soma = () => 5+5;
 
-
 console.log(soma(1, 4))
+
+//Escopo do this
+
+it ('um teste com função...', function( ){
+    console.log('Function', this)
+})
+
+it ('um teste com Arrow...', ( ) => {
+    console.log('Arrow function', this)
+})
