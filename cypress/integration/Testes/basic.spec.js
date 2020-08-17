@@ -8,10 +8,6 @@ describe('Cypress basico', () =>{
        //Pausa a execução até mandar parar cy.pause()
         cy.pause()
 
-
-
-
-
        //Fiz duas vezes
         cy.title().should('be.equal', 'Campo de Treinamento')
         cy.title().debug().should('contain', 'Campo')
