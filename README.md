@@ -15,3 +15,13 @@ npm init
 Instalar Cypress
 
 npm install cypress
+
+# Rstrutura de um teste
+
+/*
+describe ('', () => {
+    it('', () => {
+        cy.('') 
+
+    })
+}) */

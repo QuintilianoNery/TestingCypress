@@ -16,16 +16,18 @@ describe('Cypress basico', () =>{
         //Ou assim
 
             //Método do Cypress para pegtar o título da página, caso não consiga encontrar, colocar um texto aleatório no "Campo de treinamento" que no errmo mostrará o nome da página
+            
+            
+
+        //Pausa a execução até mandar parar cy.pause()
+        cy.pause()
+        //##Comando .debug() é utilizado para pegar mais detalhes sobre um ponto
+
             cy.title()
                 .should('be.equal', 'Campo de Treinamento')
                 .and('contain', 'Campo')
             //TODO escrever o log no console
             //TODO escrever o titulo em um campo de texto
-        
-       //Pausa a execução até mandar parar cy.pause()
-        //cy.pause()
-
-        //##Comando debug é utilizado para pegar mais detalhes sobre um ponto
     })
 
     //2º teste aula 8

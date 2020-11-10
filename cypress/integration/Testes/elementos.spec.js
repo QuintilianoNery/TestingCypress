@@ -20,7 +20,7 @@ describe ('Utilizando elementos básicos', () => {
       it('links', () =>{
 
           cy.get('a')
-          .click
+            .click
           cy.get('#resultado')
       })
 })
