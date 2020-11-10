@@ -15,6 +15,12 @@ describe ('Utilizando elementos básicos', () => {
         //have.textIdentifica exatamente o texto do campo que está na classe, não aceitando texto incompleto, tem que estar igual da o da classe
         cy.get('.facilAchar').should('have.text', 'Cuidado onde clica, muitas armadilhas...')
 
-
     })
+        //Links
+      it('links', () =>{
+
+          cy.get('a')
+          .click
+          cy.get('#resultado')
+      })
 })
