@@ -19,19 +19,21 @@ describe ('Utilizando elementos básicos', () => {
         //Links
       it.only('links', () => {
           cy.visit('https://wcaquino.me/cypress/componentes.html') 
-          
-          cy.get('#resultado')
-          .should('have.text','Status: Nao cadastrado')
-          
+                  
           cy.get('[href="#"]')
           .click()
           
           cy.get('#resultado')
           .should('have.text','Voltou!')
-
-        //Atualiza a página
-        cy.reload ()
-
+          
+          //Atualiza a página
+          cy.reload ()
+          
+          //Não contem o texto voltar
+          cy.get('#resultado')
+          .should('have.not.text','Voltou!')
+          
+          
           //Usando cy.get ou cy.contains
           cy.contains('Voltar').click()
 
