@@ -17,10 +17,19 @@ describe ('Utilizando elementos básicos', () => {
 
     })
         //Links
-      it('links', () =>{
-
-          cy.get('a')
-            .click
+      it.only('links', () => {
+          cy.visit('https://wcaquino.me/cypress/componentes.html') 
+          
           cy.get('#resultado')
+          .should('have.text','Status: Nao cadastrado')
+          
+          cy.get('[href="#"]')
+          .click()
+          
+          cy.get('#resultado')
+          .should('have.text','Voltou!')
+
+          //Usando cy.get ou cy.contains
+          cy.contains('Voltar').click()
       })
 })
