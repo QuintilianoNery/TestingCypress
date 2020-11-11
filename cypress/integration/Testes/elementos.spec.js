@@ -29,7 +29,13 @@ describe ('Utilizando elementos básicos', () => {
           cy.get('#resultado')
           .should('have.text','Voltou!')
 
+        //Atualiza a página
+        cy.reload ()
+
           //Usando cy.get ou cy.contains
           cy.contains('Voltar').click()
+
+          cy.get('#resultado')
+          .should('have.text','Voltou!')
       })
 })
