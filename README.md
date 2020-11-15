@@ -16,7 +16,7 @@ Instalar Cypress
 
 npm install cypress
 
-# Rstrutura de um teste
+# Estrutura de um teste
 
 /*
 describe ('', () => {
