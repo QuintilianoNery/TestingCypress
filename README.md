@@ -2,7 +2,7 @@
 
 Abrir Cypress
 
-npm run cypress:open
+npm run cy:open
 
 Abrir vs code
 
