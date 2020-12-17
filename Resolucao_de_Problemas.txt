@@ -1,0 +1,3 @@
+//Incluir delay para o preenchimento de um campo
+cy.get('.align-items-end > .form-control').type('1500', { delay: 200})
+cy.get('campo').type('texto do campo', { delay: tempo})
