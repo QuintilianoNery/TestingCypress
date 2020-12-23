@@ -1,3 +1,8 @@
 //Incluir delay para o preenchimento de um campo
 cy.get('.align-items-end > .form-control').type('1500', { delay: 200})
 cy.get('campo').type('texto do campo', { delay: tempo})
+
+
+//trabalhando com dois ambientes - configurar package.json
+"cypress:run:prod": "cypress run --config baseUrl=https://vagas.com.br",
+    "cypress:run:qa": "cypress run --config baseUrl=https://qa-site.ad.vagastec.com.br"
