@@ -4,5 +4,7 @@ cy.get('campo').type('texto do campo', { delay: tempo})
 
 
 //trabalhando com dois ambientes - configurar package.json
-"cypress:run:prod": "cypress run --config baseUrl=https://vagas.com.br",
-    "cypress:run:qa": "cypress run --config baseUrl=https://qa-site.ad.vagastec.com.br"
+//URL  produção
+"cypress:run:prod": "cypress run --config baseUrl=",
+//URL develop
+    "cypress:run:qa": "cypress run --config baseUrl="
